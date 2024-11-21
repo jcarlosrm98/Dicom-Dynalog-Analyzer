@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Project - Análisis de Fluencia y Estructuras</title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body>
+    <header style="text-align: center; padding: 20px; background-color: #4CAF50; color: white;">
+        <h1>Análisis del tratamiento de DICOM y Dynalog</h1>
+        <p>Visualización de datos de análisis de fluencia y dosis en Radioterapia</p>
+    </header>
+
+    <main style="display: flex; flex-direction: column; align-items: center; padding: 20px;">
+        <section style="max-width: 800px; text-align: center;">
+            <h2 style="color: #333;">Imágenes de los resultados</h2>
+            <p style="font-size: 1rem; color: #666;">A continuación se presentan los gráficos generados durante el análisis, junto con una breve explicación de cada uno.</p>
+        </section>
+
+        <section style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; margin-top: 20px;">
+
+            <div style="border: 1px solid #ddd; border-radius: 8px; width: 400px; padding: 10px; text-align: center;">
+                <img src="{% static 'structs_doses.png' %}" alt="Gráfico de Dosis Máxima por Estructura" style="width: 90%; border-radius: 5px;">
+                <h3>Dosis Máxima por Estructura</h3>
+                <p style="font-size: 0.9rem; color: #555;">Este gráfico muestra la dosis máxima para cada estructura relevante en el tratamiento.</p>
+            </div>
+            <div style="border: 1px solid #ddd; border-radius: 8px; width: 400px; padding: 10px; text-align: center;">
+                <img src="{% static 'dynloga113.png' %}" alt="Gráfico de Fluencia Planificada vs Real" style="width: 90%; border-radius: 5px;">
+                <h3>Fluencia Planificada vs Real</h3>
+                <p style="font-size: 0.9rem; color:#555;">Comparación entre la fluencia planificada, la fluencia real y su error para DYNLOGA.113.</p>
+            </div>
+
+
+            <div style="border: 1px solid #ddd; border-radius: 8px; width: 400px; padding: 10px; text-align: center;">
+                <img src="{% static 'dynloga028.png' %}" alt="Gráfico de Fluencia Planificada vs Real" style="width: 90%; border-radius: 5px;">
+                <h3>Fluencia Planificada vs Real</h3>
+                <p style="font-size: 0.9rem; color: #555;">Comparación entre la fluencia planificada, la fluencia real y su error para DYNLOGA.028.</p>
+            </div>
+
+            <div style="border: 1px solid #ddd; border-radius: 8px; width: 400px; padding: 10px; text-align: center;">
+                <img src="{% static 'dynloga042.png' %}" alt="Gráfico de Fluencia Planificada vs Real" style="width: 90%; border-radius: 5px;">
+                <h3>Fluencia Planificada vs Real</h3>
+                <p style="font-size: 0.9rem; color: #555;">Comparación entre la fluencia planificada, la fluencia real y su error para DYNLOGA.042.</p>
+            </div>
+
+        </section>
+    </main>
+
+    <footer style="text-align: center; padding: 20px; background-color: #4CAF50; color: white; margin-top: 20px;">
+        <p>&copy; 2024 GitHub Project. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
+
