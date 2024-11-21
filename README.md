@@ -25,5 +25,5 @@ Para utilizar el script, primero es necesario generar un entorno donde todas las
 ## Resources
 
 Para obtener los archivos Dicom y Dynalog, decidí utilizar archivos de prueba, totalmente público, para no comprometer la privacidad de nadie. Estos archivos se pueden encontrar en:
-..* [Dicom files](https://github.com/dicompyler/dicompyler-core/tree/master/tests/testdata/example_data)
-..* [Dynalog files](https://physik.gesundheitsverbund.at/dmlc/dmlc_ml.htm)
+- [Dicom files](https://github.com/dicompyler/dicompyler-core/tree/master/tests/testdata/example_data)
+- [Dynalog files](https://physik.gesundheitsverbund.at/dmlc/dmlc_ml.htm)
